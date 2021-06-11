@@ -1,4 +1,5 @@
-# byecar-client
+# ByeCar
+Web client of application for reporting invalid usage of city space.
 
 ## Project setup
 ```
