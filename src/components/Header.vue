@@ -2,7 +2,7 @@
   <header class="header">
     <NavBar/>
     <div class="header__content">
-      <h1 class="header__content-header">We care about using of urban space<br>and you can too <strong>care about it</strong></h1>
+      <h1 class="header__content-header">We care about usage of urban space<br>and you can too <strong>care about it</strong></h1>
       <Button>See how</Button>
     </div>
   </header>
