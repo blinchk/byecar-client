@@ -2,8 +2,8 @@
   <header class="header">
     <NavBar/>
     <div class="header__content" v-if="withContent">
-      <h1 class="header__content-header">We care about usage of urban space<br>and you can too <strong>care about it</strong></h1>
-      <Button type="header">See how</Button>
+      <h1 class="header__content-header" v-html="$t('mainPage.headerTitle')"/>
+      <Button type="header" v-html="$t('mainPage.seeHow')"></Button>
     </div>
   </header>
 </template>

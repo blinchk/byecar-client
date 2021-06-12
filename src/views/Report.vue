@@ -1,16 +1,20 @@
 <template>
   <div id="report">
-    <div class="report__header">
-      <h1 class="report__header-title">Something bothering you?</h1>
-      <h4 class="report__header-subtitle">You can report about it right now.</h4>
-      <hr class="report__divider">
-    </div>
+    <page-title divider>
+      Something bothering you?
+      <template v-slot:subtitle>You can report about it right now.</template>
+    </page-title>
   </div>
 </template>
 
 <script>
+import PageTitle from '../components/PageTitle'
+
 export default {
-  name: 'Report'
+  name: 'Report',
+  components: {
+    PageTitle
+  }
 }
 </script>
 

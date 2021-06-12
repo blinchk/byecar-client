@@ -14,6 +14,12 @@ export default {
   name: 'App',
   components: {
     Header
+  },
+  created () {
+    const locale = sessionStorage.getItem('byeCarLocale')
+    if (locale) {
+      this.$i18n.locale = locale
+    }
   }
 }
 </script>

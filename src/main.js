@@ -5,6 +5,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faFlag, faBullseye, faDonate } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon, FontAwesomeLayers, FontAwesomeLayersText } from '@fortawesome/vue-fontawesome'
 import router from './router'
+import i18n from './i18n'
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.component('font-awesome-layers', FontAwesomeLayers)
@@ -17,5 +18,6 @@ Vue.config.productionTip = false
 new Vue({
   router,
   store,
+  i18n,
   render: function (h) { return h(App) }
 }).$mount('#app')

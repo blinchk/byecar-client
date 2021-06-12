@@ -1,0 +1,11 @@
+{
+  "nav": {
+    "report": "Report",
+    "donate": "Donate",
+    "mission": "Mission"
+  },
+  "mainPage": {
+    "headerTitle": "We care about usage of urban space<br>and you can too <strong>care about it</strong>",
+    "seeHow": "See how"
+  }
+}

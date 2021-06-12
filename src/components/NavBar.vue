@@ -4,16 +4,31 @@
       <router-link to="/" exact class="nav__brand-link link">Byecar</router-link>
     </div>
     <div class="nav__links">
-      <router-link to="/report" class="nav__links-link link"><font-awesome-icon icon="flag" class="link-icon"/> Report</router-link>
-      <router-link to="/donate" class="nav__links-link link"><font-awesome-icon icon="donate" class="link-icon"/> Donate</router-link>
-      <router-link to="/mission" class="nav__links-link link"><font-awesome-icon icon="bullseye" class="link-icon"/> Mission</router-link>
+      <router-link to="/report" class="nav__links-link link"><font-awesome-icon icon="flag" class="link-icon"/> {{$t('nav.report')}} </router-link>
+      <router-link to="/donate" class="nav__links-link link"><font-awesome-icon icon="donate" class="link-icon"/> {{$t('nav.donate')}} </router-link>
+      <router-link to="/mission" class="nav__links-link link"><font-awesome-icon icon="bullseye" class="link-icon"/> {{$t('nav.mission')}} </router-link>
+      <select v-model="locale">
+        <option value="en">EN</option>
+        <option value="ru">RU</option>
+      </select>
     </div>
   </nav>
 </template>
 
 <script>
 export default {
-  name: 'NavBar'
+  name: 'NavBar',
+  data () {
+    return {
+      locale: this.$i18n.locale
+    }
+  },
+  watch: {
+    'locale' () {
+      this.$i18n.locale = this.locale
+      sessionStorage.setItem('byeCarLocale', this.locale)
+    }
+  }
 }
 </script>
 
