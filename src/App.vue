@@ -15,10 +15,23 @@ export default {
   components: {
     Header
   },
+  data () {
+    return {
+      defaultTitle: 'ByeCar'
+    }
+  },
   created () {
     const locale = sessionStorage.getItem('byeCarLocale')
     if (locale) {
       this.$i18n.locale = locale
+    }
+  },
+  watch: {
+    $route: {
+      immediate: true,
+      handler (to, from) {
+        document.title = to.meta.title ? `${this.$i18n.t(to.meta.title)} - ${this.defaultTitle}` : this.defaultTitle
+      }
     }
   }
 }

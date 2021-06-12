@@ -5,15 +5,13 @@ import Report from '../views/Report'
 
 Vue.use(VueRouter)
 
-const title = 'ByeCar'
-
 const routes = [
   {
     path: '/',
     name: 'Main Page',
     component: Home,
     meta: {
-      title: title
+      title: ''
     }
   },
   {
@@ -21,7 +19,7 @@ const routes = [
     name: 'Report',
     component: Report,
     meta: {
-      title: `${title} - Report`
+      title: 'nav.report'
     }
   }
 ]

@@ -7,7 +7,7 @@
       <router-link to="/report" class="nav__links-link link"><font-awesome-icon icon="flag" class="link-icon"/> {{$t('nav.report')}} </router-link>
       <router-link to="/donate" class="nav__links-link link"><font-awesome-icon icon="donate" class="link-icon"/> {{$t('nav.donate')}} </router-link>
       <router-link to="/mission" class="nav__links-link link"><font-awesome-icon icon="bullseye" class="link-icon"/> {{$t('nav.mission')}} </router-link>
-      <select v-model="locale">
+      <select v-model="locale" class="nav__locale-switcher">
         <option value="en">EN</option>
         <option value="ru">RU</option>
       </select>
@@ -90,11 +90,21 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
     &__brand {
-      margin: 0;
+      margin: 0 0 5px 0;
     }
     &__links {
       margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &-link {
+        margin-bottom: 5px;
+      }
+    }
+    &__locale-switcher {
+      width: 100px;
     }
   }
 }
