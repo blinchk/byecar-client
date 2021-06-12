@@ -1,11 +1,14 @@
 <template>
   <div id="app">
-    <Header/>
+    <Header :with-content="this.$route.path === '/'"/>
+    <main class="current-view">
+      <router-view/>
+    </main>
   </div>
 </template>
 
 <script>
-import Header from '@/components/Header'
+import Header from './components/Header'
 
 export default {
   name: 'App',
@@ -25,5 +28,9 @@ body {
 
 #app {
   font-family: 'Roboto', sans-serif;
+}
+
+.current-view {
+  margin: 0 5%;
 }
 </style>

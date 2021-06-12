@@ -1,12 +1,12 @@
 <template>
   <nav class="nav">
     <div class="nav__brand">
-      <a class="nav__brand-link link" href="#">Byecar</a>
+      <router-link to="/" exact class="nav__brand-link link">Byecar</router-link>
     </div>
     <div class="nav__links">
-      <a href="" class="nav__links-link link"><font-awesome-icon icon="flag" class="link-icon"/> Report</a>
-      <a href="" class="nav__links-link link"><font-awesome-icon icon="donate" class="link-icon"/> Donate</a>
-      <a href="" class="nav__links-link link"><font-awesome-icon icon="bullseye" class="link-icon"/> Mission</a>
+      <router-link to="/report" class="nav__links-link link"><font-awesome-icon icon="flag" class="link-icon"/> Report</router-link>
+      <router-link to="/donate" class="nav__links-link link"><font-awesome-icon icon="donate" class="link-icon"/> Donate</router-link>
+      <router-link to="/mission" class="nav__links-link link"><font-awesome-icon icon="bullseye" class="link-icon"/> Mission</router-link>
     </div>
   </nav>
 </template>

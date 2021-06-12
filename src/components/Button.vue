@@ -1,5 +1,5 @@
 <template>
-  <a href="#" class=btn-header>
+  <a href="#" :class="buttonClass">
     <slot/>
   </a>
 </template>
