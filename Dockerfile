@@ -6,5 +6,5 @@ COPY ./ .
 RUN npm run build
 
 FROM socialengine/nginx-spa:latest
-COPY ./build /app
+COPY ./dist /app
 RUN chmod -R 777 /app
