@@ -1,11 +1,9 @@
-FROM node:latest as build-stage
+FROM node:lts-alpine
+RUN npm install -g http-server
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
-COPY ./ .
+COPY . .
 RUN npm run build
-
-FROM socialengine/nginx-spa:latest as production-stage
-COPY --from=build-stage ./dist /app
 EXPOSE 8080
-RUN chmod -R 777 /app
+CMD [ "http-server", "dist" ]
