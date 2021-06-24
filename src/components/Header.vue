@@ -10,7 +10,7 @@
 
 <script>
 import NavBar from './NavBar'
-import Button from './Button'
+import Button from './general/Button'
 
 export default {
   name: 'Header',

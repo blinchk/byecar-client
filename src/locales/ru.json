@@ -7,5 +7,18 @@
   "mainPage": {
     "headerTitle": "Мы заботимся об использовании<br>городского пространства и ты <strong>можешь тоже</strong>",
     "seeHow": "Узнать как"
+  },
+  "reportPage": {
+    "somethingBotheringYou": "Что-то беспокоит?",
+    "youCanReportAboutIt": "Вы можете сообщить об этом прямо сейчас."
+  },
+  "violationTypes": {
+    "parkingBicycleRoad": "Парковка на велодорожке",
+    "parkingProhibitedArea": "Неправильная парковка",
+    "rideProhibitedArea": "Вождение в запрещённой зоне",
+    "planningMistakes": "Ошибки в городском планировании"
+  },
+  "reportForm": {
+    "selectViolationType": "Выберите причину жалобы"
   }
 }

@@ -7,5 +7,18 @@
   "mainPage": {
     "headerTitle": "We care about usage of urban space<br>and you can too <strong>care about it</strong>",
     "seeHow": "See how"
+  },
+  "reportPage": {
+    "somethingBotheringYou": "Something bothering you?",
+    "youCanReportAboutIt": "You can report about it right now."
+  },
+  "violationTypes": {
+    "parkingBicycleRoad": "Parking on bicycle road",
+    "parkingProhibitedArea": "Parking in prohibited area",
+    "rideProhibitedArea": "Ride in prohibited area",
+    "planningMistakes": "Mistakes in urban planning"
+  },
+  "reportForm": {
+    "selectViolationType": "Select violation type"
   }
 }
